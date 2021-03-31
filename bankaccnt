@@ -3,3 +3,41 @@ import java.util.Scanner;
 /**
  * bank
  */
+class account{
+    int accno;
+    String name;
+    double bal=0;
+    Scanner in1=new Scanner(System.in);
+    //creating account class constructor
+    account(){
+        System.out.println("enter the account number ");
+        this.accno=in1.nextInt();
+        System.out.println("enter the account holder name");
+        this.name=in1.next();
+    }
+    void deposite(){
+        System.out.println("current balance is = "+ bal+"\nenter the value to be deposited");
+        double ammount;
+        ammount=in1.nextDouble();
+        bal+=ammount;
+        System.out.println("account balance after deposition = "+ bal);
+    }
+    void withdraw(){
+        System.out.println("enter the ammount to be withdrawn");
+        double amnt=in1.nextDouble();
+        if(amnt>bal){
+            System.out.println("sorry you can not withdraw money because you don't have enough money");
+        }else{
+            bal=bal-amnt;
+            System.out.println("current account balane is = "+ bal);
+        }
+    }
+}
+public class bank {
+   public static void main(String[] args) {
+    account ob1=new account();
+    ob1.deposite();
+    ob1.withdraw();
+   }
+    
+}
