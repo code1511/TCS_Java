@@ -1,2 +1,2 @@
-# my_java_learning
-all starter codes available in this repo
+# TCS OPA/CPA Previous years 
+solution in java lang.
