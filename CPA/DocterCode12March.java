@@ -6,6 +6,7 @@ https://exploreidea.net/cpa-12-mar-2021-xplore-answer-java/
 
 
 import java.util.Scanner;
+//class
 class docter{
     private int docterId;
     private String docterName;
@@ -70,6 +71,8 @@ public class Main
 		    }
 		} 
 	}
+	
+	//method 1
 	public static double findtotalfeebyDepartment(docter[] arr,String deP){
 	    double f=0;
 	    for(int i=0;i<arr.length;i++){
@@ -79,6 +82,7 @@ public class Main
 	    }
 	    return f;
 	}
+	//method 2
 	public static docter[] searchdocterbyAvialablity(docter[] arr){
 	    int c=0;
 	    for(int i=0;i<arr.length;i++){
